@@ -7,9 +7,24 @@
 
 import UIKit
 
-class GreenViewController: UIViewController {
+final class GreenViewController: UIViewController {
+    
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+        printMessage()
+    }
+    
+    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
+        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+}
+
+extension UIViewController {
+    func printMessage(function: String = #function) {
+        print("\(title ?? ""): \(function)")
     }
 }

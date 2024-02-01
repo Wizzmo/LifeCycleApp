@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Yellow VC-->
+        <!--FirstVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" sceneMemberID="viewController">
+                <viewController title="FirstVC" id="BYZ-38-t0r" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -24,7 +24,7 @@
                                     <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle2"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="Mhk-oQ-12P" kind="show" id="W7s-EO-DGH"/>
+                                    <segue destination="Mhk-oQ-12P" kind="show" id="Pzq-vJ-BS5"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -41,10 +41,10 @@
             </objects>
             <point key="canvasLocation" x="997.60000000000002" y="3.1484257871064472"/>
         </scene>
-        <!--Green VC-->
+        <!--SecondVC-->
         <scene sceneID="vzr-Z7-vow">
             <objects>
-                <viewController id="Mhk-oQ-12P" customClass="OrangeViewController" customModule="LifeCycleApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="SecondVC" id="Mhk-oQ-12P" customClass="GreenViewController" customModule="LifeCycleApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2KI-8M-Ptk">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -57,7 +57,7 @@
                                     <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle2"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="eo8-pU-2Cu" kind="presentation" id="NMr-MZ-CmE"/>
+                                    <segue destination="eo8-pU-2Cu" kind="presentation" id="cTj-OS-zAk"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -74,10 +74,10 @@
             </objects>
             <point key="canvasLocation" x="1812" y="2.2488755622188905"/>
         </scene>
-        <!--Green View Controller-->
+        <!--ThirdVC-->
         <scene sceneID="Yhp-qM-8bn">
             <objects>
-                <viewController id="eo8-pU-2Cu" customClass="GreenViewController" customModule="LifeCycleApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="ThirdVC" id="eo8-pU-2Cu" customClass="OrangeViewController" customModule="LifeCycleApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HC7-yj-0XZ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -124,10 +124,10 @@
     </scenes>
     <resources>
         <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemOrangeColor">
-            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemYellowColor">
             <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
