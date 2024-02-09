@@ -57,7 +57,7 @@
                                     <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle2"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="eo8-pU-2Cu" kind="presentation" id="cTj-OS-zAk"/>
+                                    <segue destination="eo8-pU-2Cu" kind="presentation" modalPresentationStyle="fullScreen" id="cTj-OS-zAk"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -79,16 +79,19 @@
             <objects>
                 <viewController title="ThirdVC" id="eo8-pU-2Cu" customClass="OrangeViewController" customModule="LifeCycleApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HC7-yj-0XZ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AiK-Je-eaN">
-                                <rect key="frame" x="73.5" y="303" width="228" height="41"/>
+                                <rect key="frame" x="73.5" y="313" width="228" height="41"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Close View Controller">
                                     <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle2"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="close:" destination="eo8-pU-2Cu" eventType="touchUpInside" id="HXp-ZG-Syb"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="icS-Jg-HOy"/>
@@ -98,6 +101,7 @@
                             <constraint firstItem="AiK-Je-eaN" firstAttribute="centerY" secondItem="HC7-yj-0XZ" secondAttribute="centerY" id="h4G-ku-wy3"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="36D-FK-JS9"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ReP-Zh-Tdl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
